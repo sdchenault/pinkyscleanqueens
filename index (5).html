@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pinky's Clean Queens | Home, Office, Airbnb & VRBO Cleaning</title>
+  <meta name="description" content="Pinky's Clean Queens provides dependable home, office, Airbnb, and VRBO cleaning, including deep cleaning, move-in and move-out cleaning, and detailed kitchen and bathroom service. Call or email today to book your cleaning." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="cleaning service, deep cleaning, residential cleaning, office cleaning, Airbnb cleaning, VRBO cleaning, move-in cleaning, move-out cleaning, kitchen cleaning, bathroom cleaning, Pinky's Clean Queens" />
+  <meta name="theme-color" content="#b1137b" />
+  <meta property="og:title" content="Pinky's Clean Queens" />
+  <meta property="og:description" content="Bringing the royal touch to every home and office with deep cleaning, residential cleaning, office cleaning, and move-in/move-out services." />
+  <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-900:#5f0c56;
+      --pink-800:#82106d;
+      --pink-700:#b1137b;
+      --pink-500:#da4faf;
+      --pink-300:#f6c4e7;
+      --gold-700:#c6921c;
+      --gold-500:#efc75f;
+      --gold-300:#f9e6a8;
+      --cream:#fff8fb;
+      --text:#2c1830;
+      --white:#ffffff;
+      --shadow:0 18px 44px rgba(89, 11, 76, .18);
+      --radius:24px;
+      --max:1160px;
+    }
+
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family:"Inter", system-ui, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,.22), transparent 30%),
+        linear-gradient(180deg, #fff5fc 0%, #fff 35%, #fff6fb 100%);
+      line-height:1.6;
+    }
+
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+    .container { width:min(calc(100% - 2rem), var(--max)); margin:0 auto; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
+      padding:1rem 1.35rem; border-radius:999px; font-weight:800; letter-spacing:.01em;
+      transition:.2s ease; border:0; cursor:pointer;
+    }
+    .btn-primary {
+      background:linear-gradient(135deg, var(--gold-500), #ffd87c);
+      color:#4a2148; box-shadow:0 14px 28px rgba(198,146,28,.28);
+    }
+    .btn-primary:hover { transform:translateY(-1px); }
+    .btn-secondary {
+      background:rgba(255,255,255,.15); color:var(--white); border:1px solid rgba(255,255,255,.32);
+      backdrop-filter: blur(8px);
+    }
+    .eyebrow {
+      display:inline-block; padding:.35rem .8rem; border-radius:999px; font-size:.8rem; font-weight:800;
+      text-transform:uppercase; letter-spacing:.14em; color:var(--pink-700); background:#ffe9f8;
+    }
+    .section { padding:5.5rem 0; }
+    .section h2 {
+      font-family:"Cormorant Garamond", serif; font-size:clamp(2.2rem, 5vw, 4rem);
+      line-height:.95; margin:.6rem 0 1rem;
+      color:var(--pink-900);
+    }
+    .section p.lead { max-width:720px; color:#5c4a61; font-size:1.08rem; }
+
+    header {
+      position:sticky; top:0; z-index:20; backdrop-filter: blur(14px);
+      background:rgba(97, 10, 83, .78); border-bottom:1px solid rgba(255,255,255,.14);
+    }
+    .nav {
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+      min-height:76px;
+    }
+    .brand {
+      display:flex; align-items:center; gap:.85rem; color:#fff;
+      font-weight:800;
+    }
+    .brand-mark {
+      width:46px; height:46px; border-radius:50%; display:grid; place-items:center;
+      background:radial-gradient(circle at top, #ffeaa5, #d69b26 65%, #9c6410);
+      box-shadow:inset 0 3px 9px rgba(255,255,255,.4);
+      font-size:1.35rem;
+    }
+    .brand-name { line-height:1.05; }
+    .brand-name span { display:block; font-size:.84rem; opacity:.78; font-weight:600; }
+    .nav-links { display:flex; align-items:center; gap:1.1rem; color:#fff; }
+    .nav-links a { font-weight:600; opacity:.93; }
+    .nav-links .nav-call { background:#fff; color:var(--pink-800); padding:.75rem 1rem; border-radius:999px; font-weight:800; }
+
+    .hero {
+      position:relative; overflow:hidden;
+      background:
+        radial-gradient(circle at 20% 15%, rgba(255,255,255,.22), transparent 16%),
+        radial-gradient(circle at 78% 22%, rgba(255,255,255,.20), transparent 13%),
+        linear-gradient(135deg, rgba(93, 11, 78, .96), rgba(177, 19, 123, .92));
+      color:#fff;
+    }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background-image:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.55) 0 1px, transparent 2px),
+        radial-gradient(circle at 45% 38%, rgba(255,255,255,.4) 0 1px, transparent 2px),
+        radial-gradient(circle at 75% 30%, rgba(255,255,255,.35) 0 1px, transparent 2px),
+        radial-gradient(circle at 32% 72%, rgba(255,255,255,.3) 0 1px, transparent 2px),
+        radial-gradient(circle at 82% 68%, rgba(255,255,255,.38) 0 1px, transparent 2px);
+      background-size: 220px 220px, 180px 180px, 240px 240px, 210px 210px, 260px 260px;
+      opacity:.8; pointer-events:none;
+    }
+    .hero-wrap {
+      position:relative; z-index:1;
+      display:grid; grid-template-columns: 1.15fr .85fr; gap:2rem; align-items:center;
+      padding:5.5rem 0 4rem;
+    }
+    .hero h1 {
+      margin:.85rem 0 1rem;
+      font-family:"Cormorant Garamond", serif;
+      font-size:clamp(3.2rem, 9vw, 6.4rem);
+      line-height:.88;
+      text-shadow:0 6px 28px rgba(0,0,0,.2);
+    }
+    .hero p {
+      font-size:1.1rem; max-width:640px; color:rgba(255,255,255,.9);
+    }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:.9rem; margin:1.5rem 0 1.8rem; }
+    .hero-points {
+      display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1rem; max-width:720px;
+    }
+    .hero-points div {
+      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18);
+      border-radius:20px; padding:1rem; backdrop-filter: blur(8px);
+    }
+    .hero-points strong { display:block; font-size:1.08rem; }
+    .hero-card {
+      background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.2); border-radius:30px; padding:1.2rem;
+      box-shadow:var(--shadow); backdrop-filter: blur(12px);
+    }
+    .flyer-card {
+      overflow:hidden; border-radius:22px; background:#fff; box-shadow:0 20px 40px rgba(0,0,0,.18);
+    }
+    .hero-note {
+      margin-top:1rem; display:flex; align-items:center; justify-content:space-between; gap:.75rem;
+      color:#fff; font-weight:600; font-size:.95rem;
+    }
+
+    .trustbar {
+      margin-top:-1.2rem; position:relative; z-index:2;
+    }
+    .trustbar-inner {
+      background:#fff; border-radius:22px; box-shadow:var(--shadow); padding:1rem 1.2rem;
+      display:grid; grid-template-columns:repeat(4, 1fr); gap:1rem;
+    }
+    .trust-item { text-align:center; padding:.7rem; }
+    .trust-item strong { display:block; color:var(--pink-900); }
+    .trust-item span { color:#67556d; font-size:.95rem; }
+
+    .services-grid, .cards, .faq-grid {
+      display:grid; gap:1.2rem;
+    }
+    .services-grid { grid-template-columns:repeat(3, minmax(0,1fr)); margin-top:2rem; }
+    .card {
+      background:#fff; border-radius:24px; padding:1.5rem; box-shadow:var(--shadow);
+      border:1px solid #f6d4ec;
+    }
+    .service-icon {
+      width:54px; height:54px; border-radius:16px; display:grid; place-items:center;
+      background:linear-gradient(135deg, #ffe49d, #ffc6ea); font-size:1.45rem; margin-bottom:1rem;
+    }
+    .card h3 { margin:.35rem 0 .55rem; color:var(--pink-900); }
+    .checklist { display:grid; gap:.7rem; margin:1.3rem 0 0; padding:0; list-style:none; }
+    .checklist li { display:flex; gap:.75rem; align-items:flex-start; }
+    .checklist span.mark {
+      min-width:28px; height:28px; border-radius:50%; display:grid; place-items:center;
+      background:#ffe49d; color:#7a4f00; font-weight:800;
+    }
+
+    .split {
+      display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; align-items:stretch;
+      margin-top:2rem;
+    }
+    .ribbon-box {
+      background:linear-gradient(135deg, var(--pink-800), var(--pink-700));
+      color:#fff; border-radius:30px; padding:2rem; box-shadow:var(--shadow);
+    }
+    .ribbon-box h3 {
+      font-family:"Cormorant Garamond", serif; font-size:2.25rem; line-height:.95; margin:0 0 .8rem;
+    }
+    .stats {
+      display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:1.2rem;
+    }
+    .stat {
+      padding:1rem; border-radius:22px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18);
+    }
+    .stat strong { display:block; font-size:1.35rem; }
+
+    .faq-grid { grid-template-columns:repeat(2, minmax(0,1fr)); margin-top:2rem; }
+    .faq-item { background:#fff; border-radius:22px; box-shadow:var(--shadow); padding:1.3rem 1.4rem; }
+    .faq-item h3 { margin:.2rem 0 .45rem; font-size:1.05rem; color:var(--pink-900); }
+
+    .contact {
+      background:linear-gradient(135deg, #fff1fa, #fff9ef);
+    }
+    .contact-grid {
+      display:grid; grid-template-columns: .95fr 1.05fr; gap:1.5rem; align-items:start; margin-top:2rem;
+    }
+    .contact-panel, .form-panel {
+      background:#fff; border-radius:28px; padding:1.5rem; box-shadow:var(--shadow);
+    }
+    .contact-phone {
+      font-size:clamp(2rem, 5vw, 3.4rem); font-weight:900; line-height:1; color:var(--pink-900);
+      margin:.8rem 0 1.1rem;
+    }
+    form { display:grid; gap:.9rem; }
+    .field { display:grid; gap:.38rem; }
+    label { font-weight:700; font-size:.95rem; color:var(--pink-900); }
+    input, textarea, select {
+      width:100%; padding:1rem 1rem; border-radius:16px; border:1px solid #efc7df; font:inherit;
+      background:#fffdfd;
+    }
+    textarea { min-height:130px; resize:vertical; }
+    .form-note { color:#6a596f; font-size:.92rem; }
+
+    footer {
+      background:#3f073a; color:rgba(255,255,255,.9); padding:2rem 0 4.8rem;
+    }
+    .footer-grid {
+      display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+    }
+    .floating-call {
+      position:fixed; right:18px; bottom:18px; z-index:30;
+      padding:1rem 1.15rem; border-radius:999px; background:linear-gradient(135deg, var(--gold-500), #ffd87c);
+      color:#4b2448; font-weight:900; box-shadow:0 16px 36px rgba(198,146,28,.35);
+    }
+
+
+    .quote-card h3 {
+      font-family:"Cormorant Garamond", serif; font-size:2.3rem; line-height:.95; margin:.7rem 0 .65rem;
+    }
+    .quote-card p { color:rgba(255,255,255,.9); }
+    .quote-badge { background:rgba(255,255,255,.14); color:#fff; }
+    .quote-actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:1.1rem 0 1rem; }
+    .quote-secondary { background:rgba(255,255,255,.12); }
+    .quote-list { list-style:none; padding:0; margin:0 0 1.2rem; display:grid; gap:.7rem; }
+    .quote-list li {
+      padding:.85rem 1rem; border-radius:18px; background:rgba(255,255,255,.11);
+      border:1px solid rgba(255,255,255,.18); font-weight:600;
+    }
+    .flyer-mini { max-width:320px; margin:0 auto; }
+    .flyer-mini img { width:100%; height:auto; object-fit:cover; }
+    .quote-result {
+      margin-top:.8rem; padding:1rem; border-radius:20px; background:#fff7ed; border:1px solid #f3d6a1;
+    }
+    .quote-result strong { color:var(--pink-900); display:block; margin-bottom:.35rem; }
+    .quote-result p { margin:.1rem 0 .9rem; color:#654b36; }
+    .result-actions { display:flex; flex-wrap:wrap; gap:.75rem; }
+    .result-call { color:#fff; }
+
+    @media (max-width: 980px) {
+      .hero-wrap, .services-grid, .split, .faq-grid, .contact-grid, .trustbar-inner { grid-template-columns:1fr; }
+      .hero-points { grid-template-columns:1fr; }
+      .nav-links a:not(.nav-call) { display:none; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-wrap { padding:4rem 0 3rem; }
+      .section { padding:4.2rem 0; }
+      .nav-call { font-size:.92rem; }
+      .hero-note { flex-direction:column; align-items:flex-start; }
+      .contact-phone { word-break:break-word; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HouseCleaningService",
+    "name": "Pinky's Clean Queens",
+    "description": "Home, office, Airbnb, and VRBO cleaning company offering deep cleaning, recurring cleaning, move-in and move-out cleaning, and detailed kitchen and bathroom cleaning.",
+    "telephone": "+1-419-345-8838",
+    "email": "pinkyscleanqueens@gmail.com",
+    "url": "https://www.example.com/",
+      "slogan": "Bringing the royal touch to every home and office.",
+    "serviceType": [
+      "Deep Cleaning",
+      "Residential Cleaning",
+      "Office Cleaning",
+      "Airbnb Cleaning",
+      "VRBO Cleaning",
+      "Move-In Cleaning",
+      "Move-Out Cleaning",
+      "Kitchen and Bathroom Cleaning"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Pinky's Clean Queens home">
+        <div class="brand-mark">👑</div>
+        <div class="brand-name">Pinky's Clean Queens <span>Bringing the royal touch to every home and office</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">Why Choose Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-call">Book a Cleaning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <span class="eyebrow">Royal touch cleaning service</span>
+          <h1>Let the Queens Make Your Home & Office Shine</h1>
+          <p>Pinky's Clean Queens offers dependable cleaning with a personal touch. Whether you need help at home, in the office, or during a move, every visit is handled with care, reliability, and attention to detail.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:14193458838">Call Now</a>
+            <a class="btn btn-secondary" href="#contact">Email for a Quote</a>
+          </div>
+          <div class="hero-points" aria-label="Highlights">
+            <div><strong>Reliable</strong><span>Consistent service you can trust.</span></div>
+            <div><strong>Detail Focused</strong><span>Careful work in every room.</span></div>
+            <div><strong>Flexible Cleaning</strong><span>Homes, offices, Airbnb and VRBO turnovers, move-ins, and more.</span></div>
+          </div>
+        </div>
+        
+        <aside class="hero-card quote-card">
+          <div class="quote-card-top">
+            <span class="eyebrow quote-badge">Book with confidence</span>
+            <h3>Clean spaces. Friendly service. Easy booking.</h3>
+            <p>Call or email to tell us what you need, and we will help you get the right cleaning service for your home or office.</p>
+          </div>
+          <div class="quote-actions">
+            <a href="tel:14193458838" class="btn btn-primary">Call 419-345-8838</a>
+            <a href="mailto:pinkyscleanqueens@gmail.com?subject=Cleaning%20Quote%20Request" class="btn btn-secondary quote-secondary">Email Us</a>
+          </div>
+          <ul class="quote-list">
+            <li>Home cleaning</li>
+            <li>Office cleaning</li>
+            <li>Move-in and move-out cleaning</li>
+            <li>Airbnb and VRBO turnover cleaning</li>
+            <li>Detailed kitchens, bathrooms, and deep cleans</li>
+          </ul>
+          <div class="hero-note">
+            <span>pinkyscleanqueens@gmail.com</span>
+            <span>Reliable • Detail Oriented</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <div class="container trustbar" aria-label="Trust highlights">
+      <div class="trustbar-inner">
+        <div class="trust-item"><strong>Deep Cleaning</strong><span>Thorough refreshes for your space</span></div>
+        <div class="trust-item"><strong>Residential</strong><span>Routine and one-time home cleaning</span></div>
+        <div class="trust-item"><strong>Office Cleaning</strong><span>Professional cleaning for workspaces</span></div>
+        <div class="trust-item"><strong>Vacation Rentals</strong><span>Airbnb and VRBO turnover cleaning</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <span class="eyebrow">Our services</span>
+        <h2>Cleaning services for homes, offices, and vacation rentals</h2>
+        <p class="lead">From one-time deep cleans to recurring service, Pinky's Clean Queens helps keep homes, offices, Airbnb properties, and VRBO rentals fresh, welcoming, and ready for the next day.</p>
+        <div class="services-grid">
+          <article class="card">
+            <div class="service-icon">🧼</div>
+            <h3>Deep Cleaning</h3>
+            <p>Ideal for first-time visits, seasonal resets, or spaces that need a more complete top-to-bottom refresh.</p>
+          </article>
+          <article class="card">
+            <div class="service-icon">🏠</div>
+            <h3>Residential Cleaning</h3>
+            <p>Keep your home consistently clean, comfortable, and welcoming with dependable recurring or one-time service.</p>
+          </article>
+          <article class="card">
+            <div class="service-icon">🏢</div>
+            <h3>Office Cleaning</h3>
+            <p>Create a neat and professional environment for your team and clients with clean workspaces and shared areas.</p>
+          </article>
+          <article class="card">
+            <div class="service-icon">🏡</div>
+            <h3>Airbnb &amp; VRBO Cleaning</h3>
+            <p>Turnover cleaning that helps your short-term rental feel guest-ready, refreshed, and welcoming between stays.</p>
+          </article>
+          <article class="card">
+            <div class="service-icon">📦</div>
+            <h3>Move-In / Move-Out Cleaning</h3>
+            <p>Take one more thing off your moving checklist with detailed cleaning for empty or nearly empty spaces.</p>
+          </article>
+          <article class="card">
+            <div class="service-icon">✨</div>
+            <h3>Reliable & Detail-Oriented Service</h3>
+            <p>You can expect dependable service, careful work, and the kind of finishing touches that help a space truly feel clean.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <span class="eyebrow">Why choose Pinky's</span>
+        <h2>A polished brand with a strong commitment to excellence and customer service</h2>
+        <p class="lead">Bringing the royal touch to every home and office. Pinky's Clean Queens is built around dependable service, clear communication, and the kind of detail that helps every space feel truly clean and cared for.</p>
+        <div class="split">
+          <div class="ribbon-box">
+            <h3>Bringing the royal touch to every home and office</h3>
+            <p>From routine upkeep to deeper refreshes, Pinky's Clean Queens focuses on reliable service, thoughtful care, and a smooth booking experience from the first call to the final walkthrough.</p>
+            <div class="stats">
+              <div class="stat"><strong>Easy to reach</strong><span>Call, email, and website inquiries make booking a cleaning simple and straightforward.</span></div>
+              <div class="stat"><strong>Flexible services</strong><span>Homes, offices, Airbnb and VRBO rentals, and move-related cleanings.</span></div>
+              <div class="stat"><strong>Attention to detail</strong><span>As a small business, we take pride in careful work, dependable follow-through, and a polished result.</span></div>
+              <div class="stat"><strong>Service areas</strong><span>Proudly serving clients across Michigan and Ohio.</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>What you can book</h3>
+            <ul class="checklist">
+              <li><span class="mark">✓</span><div><strong>Home cleaning</strong><br>One-time or recurring cleaning for living spaces that need a fresh, cared-for feel.</div></li>
+              <li><span class="mark">✓</span><div><strong>Office cleaning</strong><br>Clean work areas, shared spaces, and client-facing rooms that support a professional environment.</div></li>
+              <li><span class="mark">✓</span><div><strong>Airbnb &amp; VRBO turnovers</strong><br>Quick, detailed turnover cleaning to help short-term rentals stay guest-ready.</div></li>
+              <li><span class="mark">✓</span><div><strong>Move-related and deep cleans</strong><br>Extra support when a space needs more attention, whether during a move or after buildup over time.</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>Helpful answers before a customer calls</h2>
+        <p class="lead">These quick answers help visitors understand the services and the easiest ways to get in touch.</p>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>What services does Pinky's Clean Queens provide?</h3>
+            <p>Services include deep cleaning, residential cleaning, office cleaning, Airbnb and VRBO turnover cleaning, move-in and move-out cleaning, and detailed kitchen and bathroom cleaning.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How do I book a cleaning?</h3>
+            <p>The fastest option is to call <a href="tel:14193458838"><strong>419-345-8838</strong></a>, or you can email <a href="mailto:pinkyscleanqueens@gmail.com"><strong>pinkyscleanqueens@gmail.com</strong></a> with your cleaning needs.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Is this website mobile friendly?</h3>
+            <p>Yes. The layout adapts to phones and tablets, with large tap targets and a floating call button for faster booking.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I request a quote online?</h3>
+            <p>Yes. Use the quote form below and your email app will open with your information ready to send to Pinky's Clean Queens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h2>Call or email today to book your cleaning</h2>
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <p>Need help with a home, office, Airbnb, VRBO, or move-related cleaning project? Reach out for availability, pricing, and scheduling.</p>
+            <div class="contact-phone">419-345-8838</div>
+            <p><a class="btn btn-primary" href="tel:14193458838">Tap to Call Pinky's Clean Queens</a></p>
+            <p><a class="btn" style="background:#ffe9f8;color:var(--pink-900);" href="mailto:pinkyscleanqueens@gmail.com">Email: pinkyscleanqueens@gmail.com</a></p>
+            <ul class="checklist">
+              <li><span class="mark">✓</span><div>Deep cleaning</div></li>
+              <li><span class="mark">✓</span><div>Residential cleaning</div></li>
+              <li><span class="mark">✓</span><div>Office cleaning</div></li>
+              <li><span class="mark">✓</span><div>Airbnb / VRBO cleaning</div></li>
+              <li><span class="mark">✓</span><div>Move-in / move-out cleaning</div></li>
+            </ul>
+          </div>
+          <div class="form-panel">
+            <h3>Quick quote request</h3>
+            <p class="form-note">Fill this out and your email app will open with your request ready to send.</p>
+            <form id="quoteForm">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required />
+              </div>
+              <div class="field">
+                <label for="service">Service needed</label>
+                <select id="service" name="service" required>
+                  <option>Deep Cleaning</option>
+                  <option>Residential Cleaning</option>
+                  <option>Office Cleaning</option>
+                  <option>Airbnb / VRBO Cleaning</option>
+                  <option>Move-In / Move-Out</option>
+                  <option>Kitchens & Bathrooms Detailed</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="details">Project details</label>
+                <textarea id="details" name="details" placeholder="Tell us about your home, office, Airbnb, or VRBO and what kind of cleaning help you need." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Quote Request</button>
+              <div class="quote-result" id="quoteResult" hidden>
+                <strong>Your email request is ready.</strong>
+                <p>Use the buttons below to email your request or call right away.</p>
+                <div class="result-actions">
+                  <a class="btn btn-primary" id="emailLink" href="mailto:pinkyscleanqueens@gmail.com">Email Pinky's Clean Queens</a>
+                  <a class="btn btn-secondary result-call" href="tel:14193458838">Call Instead</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Pinky's Clean Queens</strong><br>
+        Bringing the royal touch to every home, office, Airbnb, and VRBO stay.
+      </div>
+      <div>
+        <a href="tel:14193458838">419-345-8838</a><br>
+        <a href="mailto:pinkyscleanqueens@gmail.com">pinkyscleanqueens@gmail.com</a><br>
+        Serving Ohio and Michigan<br>
+        Hours: 8 AM - 9 PM<br>
+        <span id="year"></span> Pinky's Clean Queens. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-call" href="tel:14193458838" aria-label="Call Pinky's Clean Queens now">Call 419-345-8838</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const quoteForm = document.getElementById('quoteForm');
+    const quoteResult = document.getElementById('quoteResult');
+    const emailLink = document.getElementById('emailLink');
+
+    quoteForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const details = document.getElementById('details').value.trim();
+
+      const subject = encodeURIComponent(`Quote Request - ${service}`);
+      const body = encodeURIComponent(`Hello Pinky's Clean Queens,\n\nMy name is ${name}.\nI am looking for ${service}.\nBest phone number: ${phone}.\n\nDetails:\n${details}`);
+      emailLink.href = `mailto:pinkyscleanqueens@gmail.com?subject=${subject}&body=${body}`;
+      quoteResult.hidden = false;
+      quoteResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      window.location.href = emailLink.href;
+    });
+  </script>
+</body>
+</html>
